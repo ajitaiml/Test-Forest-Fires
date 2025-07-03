@@ -1,0 +1,11 @@
+{
+    "cSpell.words": [
+        "numpy"
+    ],
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    }
+}
+

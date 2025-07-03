@@ -2,51 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FWI Prediction</title>
+    <title>Forest Fire FWI Predictor</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 30px;
-            max-width: 600px;
-            margin: auto;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/HZ9Bvx2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
         }
-        input, button {
-            padding: 10px;
-            margin: 8px 0;
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            margin: 80px auto;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #ffa726;
+        }
+
+        input {
             width: 100%;
-            box-sizing: border-box;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
         }
+
         button {
-            background-color: #4CAF50;
+            width: 100%;
+            padding: 14px;
+            background-color: #e53935;
             color: white;
             border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
         }
-        h1, h2 {
+
+        button:hover {
+            background-color: #b71c1c;
+        }
+
+        .result-box {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 20px;
             text-align: center;
+            color: #ffcc80;
         }
     </style>
 </head>
 <body>
 
-    <h1>FWI Prediction</h1>
+    <div class="container">
+        <h1>🔥 Forest Fire FWI Predictor</h1>
 
-    <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict_datapoint') }}" method="post">
-        <input type="text" name="Temperature" placeholder="Temperature" required />
-        <input type="text" name="RH" placeholder="Relative Humidity" required />
-        <input type="text" name="Ws" placeholder="Wind Speed" required />
-        <input type="text" name="Rain" placeholder="Rain" required />
-        <input type="text" name="FFMC" placeholder="FFMC" required />
-        <input type="text" name="DMC" placeholder="DMC" required />
-        <input type="text" name="ISI" placeholder="ISI" required />
-        <input type="text" name="Classes" placeholder="Classes (0 or 1)" required />
-        <input type="text" name="Region" placeholder="Region (0 or 1)" required />
-        <button type="submit">Predict</button>
-    </form>
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+            <input type="text" name="Temperature" placeholder="Temperature (°C)" required />
+            <input type="text" name="RH" placeholder="Relative Humidity (%)" required />
+            <input type="text" name="Ws" placeholder="Wind Speed (km/h)" required />
+            <input type="text" name="Rain" placeholder="Rain (mm)" required />
+            <input type="text" name="FFMC" placeholder="FFMC Index" required />
+            <input type="text" name="DMC" placeholder="DMC Index" required />
+            <input type="text" name="ISI" placeholder="ISI Index" required />
+            <input type="text" name="Classes" placeholder="Classes (0 or 1)" required />
+            <input type="text" name="Region" placeholder="Region (0 or 1)" required />
+            <button type="submit">Predict FWI</button>
+        </form>
 
-    {% if results is defined %}
-        <h2>The FWI prediction is: {{ results }}</h2>
-    {% endif %}
+        {% if results is defined %}
+        <div class="result-box">
+            🔥 <strong>FWI Prediction:</strong> {{ results }}
+        </div>
+        {% endif %}
+    </div>
 
 </body>
 </html>
