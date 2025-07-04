@@ -55,9 +55,8 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ---
 
-# 🗂 Project Structure – FWI Predictor
+## 🗂 Project Structure – FWI Predictor
 
-## 🗂 Project Structure
 
 | Path                        | Description                                                  |
 |-----------------------------|--------------------------------------------------------------|
