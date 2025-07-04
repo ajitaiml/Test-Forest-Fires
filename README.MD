@@ -66,13 +66,11 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 | `model/`                   | Stores serialized ML components                              |
 | ├── `ridge.pkl`            | Trained Ridge Regression model                               |
 | └── `scaler.pkl`           | StandardScaler used for preprocessing                        |
-| `static/`                  | Static assets for the web frontend                           |
-| └── `style.css`            | Custom CSS styles                                            |
 | `templates/`               | HTML templates used by Flask (Jinja2)                        |
 | └── `index.html`           | Main input/output web page                                   |
 | `app.py`                   | Main Flask app handling routes and predictions               |
 | `train_model.ipynb`        | Jupyter notebook for training and saving the ML model        |
-| `requirements.txt`         | Python dependencies for running the app                     |
+| `requirements.txt`         | Python dependencies for running the app                      |
 | `runtime.txt`              | Python runtime version specification for AWS deployment      |
 | `README.md`                | Project overview and documentation                           |
 
