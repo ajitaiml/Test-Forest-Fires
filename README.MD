@@ -55,25 +55,27 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ---
 
-## 🗂 Project Structure
+# 🗂 Project Structure – FWI Predictor
+
 forest-fire-fwi-predictor/
 │
-├── .ebextensions/           # AWS Elastic Beanstalk config files
-│   └── python.config
+├── .ebextensions/ # AWS Elastic Beanstalk configuration
+│ └── python.config # Commands to install packages on EC2 instance
 │
-├── model/                   # Serialized ML model and scaler
-│   ├── ridge.pkl
-│   └── scaler.pkl
+├── model/ # Saved machine learning artifacts
+│ ├── ridge.pkl # Trained Ridge Regression model
+│ └── scaler.pkl # StandardScaler used for input features
 │
-├── static/                  # CSS or other static files
-│   └── style.css
+├── static/ # Frontend static assets
+│ └── style.css # Custom CSS styling
 │
-├── templates/               # HTML templates for Flask
-│   └── index.html
+├── templates/ # Jinja2 HTML templates
+│ └── index.html # Main input/output web interface
 │
-├── app.py                   # Main Flask application
-├── requirements.txt         # Project dependencies
-├── train_model.ipynb        # Notebook for data processing & model training
-├── README.md                # Project overview and instructions
-└── runtime.txt              # Python runtime version for AWS
+├── app.py # Flask application logic and prediction route
+├── requirements.txt # Python dependencies for the app
+├── train_model.ipynb # Model training, preprocessing, and export notebook
+├── runtime.txt # Python version for AWS deployment
+└── README.md # Project documentation
+
 
