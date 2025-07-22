@@ -45,14 +45,15 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ## 🛠 Tech Stack
 
-| 🧩 Component      | 🛠 Technologies & Tools                                |
-|-------------------|--------------------------------------------------------|
-| 🖼️ Frontend       | ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) |
-| ⚙️ Backend        | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) |
-| 📊 ML Model       | ![Scikit-learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white) (Ridge Regression) |
-| ☁️ Deployment     | ![AWS](https://img.shields.io/badge/-AWS%20Elastic%20Beanstalk-232F3E?logo=amazonaws&logoColor=white) |
-| 🗃️ Version Control| ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white) |
-| 🧪 Environment    | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
+
+| Category              | Tool                                                                 | Usage                                                                 |
+|-----------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Programming Language  | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Base language for model building, preprocessing, and app logic       |
+| Modeling              | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?logo=tensorflow&logoColor=white) | Deep learning library used to build the ANN model                    |
+| Modeling              | ![Keras](https://img.shields.io/badge/-Keras-D00000?logo=keras&logoColor=white) | High-level API to define and train the ANN model on top of TensorFlow |
+| Web App               | ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white) | Framework to build and deploy an interactive web app for predictions |
+| Preprocessing         | ![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?logo=scikit-learn&logoColor=white) | Used for scaling, encoding, and preprocessing tabular data          |
+
 
 ---
 
