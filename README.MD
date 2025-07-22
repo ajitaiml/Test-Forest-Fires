@@ -12,18 +12,18 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ## 🚀 Live Demo
 
-🔗 [Click here to try the Forest Fire Weather Index Predictor](http://testforestfires-env-1.eba-wapp9iuf.ap-south-1.elasticbeanstalk.com/)
+🔗 [Try the Live App](http://testforestfires-env-1.eba-wapp9iuf.ap-south-1.elasticbeanstalk.com/)
 
 ---
 
 ## 🧠 Machine Learning Workflow
 
-- Data collection & cleaning
-- Feature engineering & scaling
-- Ridge Regression model training
-- Model serialization (`ridge.pkl`, `scaler.pkl`)
-- Flask web integration
-- Deployment using AWS Elastic Beanstalk
+- 📊 Data collection & cleaning  
+- ⚙️ Feature engineering & scaling  
+- 🧮 Ridge Regression model training  
+- 💾 Model serialization (`ridge.pkl`, `scaler.pkl`)  
+- 🌐 Flask web integration  
+- ☁️ Deployment using AWS Elastic Beanstalk  
 
 ---
 
@@ -45,18 +45,18 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ## 🛠 Tech Stack
 
-| Layer       | Tools & Libraries                  |
-|-------------|------------------------------------|
-| Frontend    | HTML, CSS                          |
-| Backend     | Flask (Python)                     |
-| ML Model    | Scikit-learn (Ridge Regression)    |
-| Deployment  | AWS Elastic Beanstalk (.ebextensions) |
-| Versioning  | Git & GitHub                       |
+| 🧩 Component      | 🛠 Technologies & Tools                                |
+|-------------------|--------------------------------------------------------|
+| 🖼️ Frontend       | ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) |
+| ⚙️ Backend        | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) |
+| 📊 ML Model       | ![Scikit-learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?logo=scikit-learn&logoColor=white) (Ridge Regression) |
+| ☁️ Deployment     | ![AWS](https://img.shields.io/badge/-AWS%20Elastic%20Beanstalk-232F3E?logo=amazonaws&logoColor=white) |
+| 🗃️ Version Control| ![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white) |
+| 🧪 Environment    | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) |
 
 ---
 
-## 🗂 Project Structure – FWI Predictor
-
+## 🗂 Project Structure
 
 | Path                        | Description                                                  |
 |-----------------------------|--------------------------------------------------------------|
@@ -73,4 +73,11 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 | `runtime.txt`              | Python runtime version specification for AWS deployment      |
 | `README.md`                | Project overview and documentation                           |
 
+---
 
+## 📬 Contact
+
+If you have any suggestions or feedback, feel free to connect!
+
+📧 ajitsingh@example.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile/)  
