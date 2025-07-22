@@ -76,9 +76,4 @@ Forest fires pose a severe environmental threat. Predicting the FWI helps with e
 
 ---
 
-## 📬 Contact
-
-If you have any suggestions or feedback, feel free to connect!
-
-📧 ajitsingh@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile/)  
+]
